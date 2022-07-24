@@ -1,0 +1,4 @@
+Rest API for managing different articles using Node, Express & MongoDB
+
+# DATABASE
+Enter in line 19 your database uri

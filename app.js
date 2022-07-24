@@ -26,7 +26,6 @@ const Article = mongoose.model('Article', articleSchema);
 
 //////////////////////////////////////////////////////////////////
 
-// Routes
 app.route('/articles')
 	.get((req, res) => {
 		Article.find((err, found) => {
@@ -48,7 +47,6 @@ app.route('/articles')
 
 //////////////////////////////////////////////////////////////////
 
-// Get specific article
 app.route('/articles/:articleTitle')
 	.get((req, res) => {
 		Article.findOne({ title: req.params.articleTitle }, (err, found) => {
